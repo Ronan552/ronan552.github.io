@@ -1,0 +1,128 @@
+/*** GENERAL ***/
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+:root {
+    --mainColor: #7c0a02;
+    --secondaryColor: #b22222;
+
+}
+
+::selection {
+    background: var(--mainColor);
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    column-rule-color: var(--mainColor) !important;
+    font-weight: 400 !important;
+}
+
+a:hover {
+    color: var(--secondaryColor) !important;
+    font-weight: 400 !important;
+}
+
+p {
+    font-size:  20px;
+}
+
+/*** Nav ***/
+
+.navbar-link, a.navbar-item {
+    color: var(--mainColor);
+}
+
+.navbar-link, a.navbar-item:hover {
+    color: #fff !important;
+    background-color: var(--secondaryColor) !important;
+}
+
+/*** Intro Text ***/
+.introText {
+    margin-bottom: 50px;
+}
+
+/* Sections */
+.card{
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 6px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 6px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 6px -12px rgba(0,0,0,0.75);
+}
+
+.pageSections{
+margin: 0px 2% 0px ;
+
+}
+
+.pageSectionsColumns {
+    margin-top: 25px;
+}
+
+/*** Portfolio ***/
+.portfolioBtn{
+    background-color: var(--secondaryColor);
+    color: #fff !important;
+    border-radius: 5px;
+    padding: 10px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    transition: transform .5s ease
+}
+
+.portfolioBtn:hover{
+    background-color: var(--mainColor);
+    column-rule-color: #fff;
+    transform: scale(1.2);
+}
+
+.column.is-half.reverseTxt{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+@media(max-width: 767px) {
+    .reverse {
+        flex-direction: column-reverse !important;
+        display: flex !important;
+    }
+
+    .column.is-half.reverseTxt{
+        padding-right: 12px;
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .brandLogo {
+        width: 50%;
+    }
+}
+
+
+/*** Footer ***/
+.icon {
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.emailMe {
+    color: #fff;
+    background-color: var(--mainColor);
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+}
+.footerNav {
+    padding-top: 40px;
+
+}
+
